@@ -9,3 +9,4 @@ class Task(db.Document):
     project = db.StringField(max_length=20)
     description = db.StringField()
     tags = db.ListField(db.StringField(max_length=20))
+    running = db.BooleanField(required=True,default=False)
