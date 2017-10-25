@@ -9,6 +9,7 @@ app.register_blueprint(tasks)
 ## include db name in URI; _HOST entry overwrites all others
 app.config['MONGODB_HOST'] = 'mongodb://localhost:27017'
 app.config['MONGODB_SETTINGS'] = {'db':'ftask', 'alias':'default'} #necessary to set default alias
+app.secret_key = "12345678"
 app.debug = True
 
 # initalize app with database
