@@ -1,0 +1,1 @@
+from .ftask import app
