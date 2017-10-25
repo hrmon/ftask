@@ -1,0 +1,2 @@
+graft ftask/templates
+graft ftask/static
